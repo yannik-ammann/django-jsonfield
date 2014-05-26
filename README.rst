@@ -1,6 +1,8 @@
 django-jsonfield
 ----------------
 
+**PostgreSQL Fork**: This fork removes the support for native JSON data types.
+
 django-jsonfield is a reusable Django field that allows you to store validated JSON in your model.
 
 It silently takes care of serialization. To use, simply add the field to one of your models.

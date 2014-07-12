@@ -2,6 +2,7 @@ from distutils.core import setup
 from distutils.core import Command
 
 
+
 class TestCommand(Command):
     user_options = []
 
@@ -17,11 +18,15 @@ class TestCommand(Command):
             'ENGINE': 'django.db.backends.sqlite3'}},
             INSTALLED_APPS=('jsonfield',))
         from django.core.management import call_command
+        import django
+
+        if django.VERSION[:2] >= (1, 7):
+            django.setup()
         call_command('test', 'jsonfield')
 
 
 setup(name='jsonfield',
-    version='0.9.21',
+    version='0.9.22',
     packages=['jsonfield'],
     license='MIT',
     author='Brad Jasper',

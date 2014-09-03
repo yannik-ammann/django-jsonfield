@@ -9,6 +9,8 @@ It silently takes care of serialization. To use, simply add the field to one of 
 
 **New: Python 3 & Django 1.7 supported!**
 
+**PostgreSQL?: Use https://github.com/bradjasper/django-jsonfield/tree/postgresql for now**
+
 Install
 -------
 
@@ -87,6 +89,8 @@ Email: `contact@bradjasper.com`_
 
 Changes
 -------
+
+v0.9.23, 9/3/2014 -- Allowed tests to run in older versions of Django
 
 v0.9.22, 7/10/2014 -- Added Django 1.7 support
 
